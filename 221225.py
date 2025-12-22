@@ -219,8 +219,8 @@ div[data-baseweb="select"] input {
 # ============================================================
 # FILE PATHS (GLOBAL & SAFE)
 # ============================================================
-DATA_FILE = r"E:\sirf_analysis\SIRF_DIPLOMA_SESSION_WISE_DATA10122025.xlsx"
-MASTER_FILE = r"E:\sirf_analysis\MASTER_INSTITUTE_LIST.xlsx"
+DATA_FILE = r"data/SIRF_DIPLOMA_SESSION_WISE_DATA10122025.xlsx"
+MASTER_FILE = r"data/MASTER_INSTITUTE_LIST.xlsx"
 
 
 # ============================================================
