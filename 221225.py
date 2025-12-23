@@ -72,7 +72,7 @@ h3 { font-size: 1.8 rem !important; font-weight:600; color:#5D4037; }
    🔥 REAL GLOBAL FONT FIX (THIS WAS MISSING)
 ===================================================== */
 section.main * {
-    font-size: 20px !important;
+    font-size: 30px !important;
     line-height: 1.65;
 }
 
