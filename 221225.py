@@ -220,6 +220,20 @@ div[data-baseweb="select"] svg {
 div[data-baseweb="select"]:focus-within > div {
     border: 2px solid #FF8F00 !important;
 }
+/* =====================================================
+   ✅ STREAMLIT TABS — VISUAL SCALE FIX (WORKING)
+===================================================== */
+
+div[data-testid="stTabs"] {
+    transform: scale(1.35);          /* 👈 increase size */
+    transform-origin: left top;
+}
+
+/* Prevent layout jump */
+div[data-testid="stTabs"] > div {
+    margin-bottom: 30px;
+}
+
 
 /* =====================================================
    🎯 FIX: SELECTED VALUE TEXT COLOR (ONLY)
