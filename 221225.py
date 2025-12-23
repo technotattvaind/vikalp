@@ -2165,7 +2165,7 @@ def main():
     # TAB 7 — DISTRICT INSPECTION PRIORITY (MAP + SCORE LOGIC)
     # ========================================================
     with tabs[7]:
-        st.markdown("## 🗺️ District Inspection Priority — Uttar Pradesh")
+        #st.markdown("## 🗺️ District Inspection Priority — Uttar Pradesh")
     
     
         # ====================================================
