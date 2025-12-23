@@ -176,6 +176,24 @@ div[data-testid="stTabs"] button[aria-selected="true"] span {
     color: #BF360C !important;
 }
 
+
+/* =====================================================
+   🚨 STREAMLIT TABS — ABSOLUTE OVERRIDE (GUARANTEED)
+===================================================== */
+
+/* Target the REAL visible tab text */
+div[data-testid="stTabs"] button[role="tab"] span:last-child {
+    font-size: 38px !important;   /* 👈 CHANGE SIZE HERE */
+    font-weight: 900 !important;
+    line-height: 1.35 !important;
+}
+
+/* Active tab */
+div[data-testid="stTabs"] button[aria-selected="true"] span:last-child {
+    font-size: 40px !important;
+    font-weight: 900 !important;
+    color: #BF360C !important;
+}
 /* =====================================================
    METRICS & DATAFRAME (ALWAYS SMALL OTHERWISE)
 ===================================================== */
