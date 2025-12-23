@@ -71,10 +71,7 @@ h3 { font-size: 1.8rem !important; font-weight:600; color:#5D4037; }
 /* =====================================================
    🔥 REAL GLOBAL FONT FIX (THIS WAS MISSING)
 ===================================================== */
-/* Global font — EXCEPT tabs */
-section.main *:not(button[role="tab"]):not(button[role="tab"] *) {
-      line-height: 1.65;
-}
+
 
 /* Markdown */
 .stMarkdown p,
