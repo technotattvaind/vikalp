@@ -65,8 +65,8 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h2 { font-size: 4.8rem !important; font-weight: 700; color:#BF360C; }
-h3 { font-size: 4.6rem !important; font-weight:600; color:#5D4037; }
+h2 { font-size: 2.4 rem !important; font-weight: 700; color:#BF360C; }
+h3 { font-size: 1.8 rem !important; font-weight:600; color:#5D4037; }
 
 /* =====================================================
    🔥 REAL GLOBAL FONT FIX (THIS WAS MISSING)
