@@ -2174,7 +2174,7 @@ def main():
         import json, folium
         from streamlit_folium import st_folium
     
-        GEOJSON_PATH = r"E:\sirf_analysis\uttar_pradesh_districts.geojson"
+        GEOJSON_PATH = r"data/uttar_pradesh_districts.geojson"
     
         with open(GEOJSON_PATH, "r", encoding="utf-8") as f:
             up_geojson = json.load(f)
