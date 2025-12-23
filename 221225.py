@@ -59,8 +59,8 @@ st.markdown("""
 
 /* ===================== HEADINGS ===================== */
 h1 {
-    font-size: 6.2rem !important;
-    font-weight: 800 !important;
+    font-size: 7.2rem !important;
+    font-weight: 600 !important;
     background: linear-gradient(90deg,#FF8F00,#FF6F00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
