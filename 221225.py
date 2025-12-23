@@ -65,14 +65,15 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h2 { font-size: 2.4 rem !important; font-weight: 700; color:#BF360C; }
-h3 { font-size: 1.8 rem !important; font-weight:600; color:#5D4037; }
+h2 { font-size: 2.4rem !important; font-weight: 700; color:#BF360C; }
+h3 { font-size: 1.8rem !important; font-weight:600; color:#5D4037; }
 
 /* =====================================================
    🔥 REAL GLOBAL FONT FIX (THIS WAS MISSING)
 ===================================================== */
-section.main * {
-    font-size: 30px !important;
+/* Global font — EXCEPT tabs */
+section.main *:not(button[role="tab"]):not(button[role="tab"] *) {
+    font-size: 20px !important;
     line-height: 1.65;
 }
 
@@ -102,10 +103,11 @@ div[data-baseweb="textarea"] textarea {
 }
 
 /* Buttons */
-button {
+button:not([role="tab"]) {
     font-size: 20px !important;
     font-weight: 700;
 }
+
 
 /* =====================================================
    PREMIUM LARGE STREAMLIT TABS — FINAL FIX
