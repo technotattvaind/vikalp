@@ -45,7 +45,7 @@ st.set_page_config(
 # 🔥 GLOBAL ZOOM (MOST IMPORTANT)
 st.markdown("""
 <script>
-document.body.style.zoom = "1.05";
+document.body.style.zoom = "1";
 </script>
 """, unsafe_allow_html=True)
 
