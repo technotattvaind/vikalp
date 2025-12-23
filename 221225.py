@@ -160,6 +160,9 @@ div[data-baseweb="tab"][aria-selected="true"] > button > span {
 div[data-baseweb="tab"] > button:hover {
     background-color: #FFF3E0 !important;
 }
+div[data-testid="stTabs"] button[role="tab"] span {
+    background: red !important;
+}
 
 /* =====================================================
    METRICS & DATAFRAME (ALWAYS SMALL OTHERWISE)
