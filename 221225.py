@@ -159,6 +159,23 @@ div[data-baseweb="tab"] > button:hover {
     background-color: #FFF3E0 !important;
 }
 
+   🔠 FORCE TAB FONT SIZE (REAL TARGET)
+===================================================== */
+
+/* All tab labels */
+div[data-testid="stTabs"] button[role="tab"] span {
+    font-size: 36px !important;   /* 👈 increase here */
+    font-weight: 900 !important;
+    line-height: 1.35 !important;
+}
+
+/* Active tab label */
+div[data-testid="stTabs"] button[aria-selected="true"] span {
+    font-size: 38px !important;   /* 👈 bigger active tab */
+    font-weight: 900 !important;
+    color: #BF360C !important;
+}
+
 /* =====================================================
    METRICS & DATAFRAME (ALWAYS SMALL OTHERWISE)
 ===================================================== */
