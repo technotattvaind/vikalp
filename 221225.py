@@ -59,13 +59,13 @@ st.markdown("""
 
 /* ===================== HEADINGS ===================== */
 h1 {
-    font-size: 6.2rem !important;
+    font-size: 7.2rem !important;
     font-weight: 800 !important;
     background: linear-gradient(90deg,#FF8F00,#FF6F00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h2 { font-size: 5.2rem !important; font-weight: 700; color:#BF360C; }
+h2 { font-size: 4.8rem !important; font-weight: 700; color:#BF360C; }
 h3 { font-size: 4.6rem !important; font-weight:600; color:#5D4037; }
 
 /* =====================================================
