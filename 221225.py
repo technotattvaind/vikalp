@@ -108,40 +108,53 @@ button {
 }
 
 /* =====================================================
-   PREMIUM LARGE STREAMLIT TABS
+   PREMIUM LARGE STREAMLIT TABS — FINAL FIX
 ===================================================== */
+
+/* Tabs container */
 div[data-testid="stTabs"] {
-    margin-top: 16px;
+    margin-top: 20px;
     border-bottom: 3px solid #FFCC80;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
+    min-height: 96px !important;          /* 🔥 force height */
 }
 
+/* Each tab wrapper */
 div[data-baseweb="tab"] {
     padding: 0 !important;
+    min-height: 88px !important;          /* 🔥 force height */
 }
 
+/* Actual clickable tab */
 div[data-baseweb="tab"] > button {
-    padding: 18px 34px !important;
-    border-radius: 18px !important;
+    min-height: 88px !important;          /* 🔥 KEY FIX */
+    padding: 22px 42px !important;
+    border-radius: 20px !important;
+    align-items: center !important;
 }
 
+/* Tab text */
 div[data-baseweb="tab"] > button > span {
-    font-size: 30px !important;
+    font-size: 32px !important;
     font-weight: 800 !important;
+    line-height: 1.3 !important;           /* 🔥 prevents squeeze */
     color: #6D4C41 !important;
 }
 
+/* Active tab */
 div[data-baseweb="tab"][aria-selected="true"] > button {
     background: linear-gradient(90deg,#FFE0B2,#FFCC80) !important;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
 }
 
+/* Active tab text */
 div[data-baseweb="tab"][aria-selected="true"] > button > span {
-    font-size: 28px !important;
+    font-size: 34px !important;
     font-weight: 900 !important;
     color: #BF360C !important;
 }
 
+/* Hover */
 div[data-baseweb="tab"] > button:hover {
     background-color: #FFF3E0 !important;
 }
