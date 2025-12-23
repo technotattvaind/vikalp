@@ -108,56 +108,73 @@ button {
 }
 
 /* =====================================================
-   PREMIUM LARGE STREAMLIT TABS — FINAL FIX
+   ✅ STREAMLIT TABS — COMPLETE & FINAL (ADMIN SIZE)
+   Compatible with latest Streamlit
 ===================================================== */
 
-/* Tabs container */
+/* Tabs outer container */
 div[data-testid="stTabs"] {
-    margin-top: 20px;
-    border-bottom: 3px solid #FFCC80;
+    margin-top: 22px;
     padding-bottom: 14px;
-    min-height: 96px !important;          /* 🔥 force height */
+    border-bottom: 3px solid #FFCC80;
 }
 
-/* Each tab wrapper */
-div[data-baseweb="tab"] {
-    padding: 0 !important;
-    min-height: 88px !important;          /* 🔥 force height */
-}
-
-/* Actual clickable tab */
-div[data-baseweb="tab"] > button {
-    min-height: 88px !important;          /* 🔥 KEY FIX */
-    padding: 22px 42px !important;
-    border-radius: 20px !important;
+/* Tabs row (critical) */
+div[data-testid="stTabs"] > div {
+    min-height: 120px !important;
+    display: flex !important;
     align-items: center !important;
 }
 
-/* Tab text */
-div[data-baseweb="tab"] > button > span {
-    font-size: 32px !important;
+/* Actual tab buttons */
+div[data-testid="stTabs"] button[role="tab"] {
+    min-height: 96px !important;
+    padding: 26px 48px !important;
+    margin-right: 10px !important;
+
+    border-radius: 22px !important;
+    background: #FFF8E1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
     font-weight: 800 !important;
-    line-height: 1.3 !important;           /* 🔥 prevents squeeze */
+}
+
+/* Tab text */
+div[data-testid="stTabs"] button[role="tab"] span {
+    font-size: 34px !important;
+    font-weight: 800 !important;
+    line-height: 1.3 !important;
     color: #6D4C41 !important;
+    white-space: nowrap !important;
 }
 
 /* Active tab */
-div[data-baseweb="tab"][aria-selected="true"] > button {
+div[data-testid="stTabs"] button[aria-selected="true"] {
     background: linear-gradient(90deg,#FFE0B2,#FFCC80) !important;
-    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.20) !important;
 }
 
 /* Active tab text */
-div[data-baseweb="tab"][aria-selected="true"] > button > span {
-    font-size: 34px !important;
+div[data-testid="stTabs"] button[aria-selected="true"] span {
+    font-size: 36px !important;
     font-weight: 900 !important;
     color: #BF360C !important;
 }
 
 /* Hover */
-div[data-baseweb="tab"] > button:hover {
-    background-color: #FFF3E0 !important;
+div[data-testid="stTabs"] button[role="tab"]:hover {
+    background: #FFF3E0 !important;
 }
+
+/* Remove default focus outline */
+div[data-testid="stTabs"] button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 
 /* =====================================================
    METRICS & DATAFRAME (ALWAYS SMALL OTHERWISE)
