@@ -73,7 +73,7 @@ h3 { font-size: 1.8rem !important; font-weight:600; color:#5D4037; }
 ===================================================== */
 /* Global font — EXCEPT tabs */
 section.main *:not(button[role="tab"]):not(button[role="tab"] *) {
-    font-size: 20px !important;
+    font-size: 30px !important;
     line-height: 1.65;
 }
 
